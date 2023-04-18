@@ -11,11 +11,10 @@
     --width-desktop: 1440px;
     }
 
-body {
+body{
     margin-left: auto;
     margin-right: auto;
     max-width: var(--width-desktop);
-    
 }
 header{
     width: 100%;
@@ -28,7 +27,6 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
-/* -----------------------------header------------------------------------- */
 .logo{
     margin-top: 30px;
     width: 200px;
@@ -38,7 +36,6 @@ nav{
     margin-right: 20px;
     cursor: pointer;
 }
-
 .nav-menu{
     position:fixed;
     width: 100%;
@@ -48,6 +45,7 @@ nav{
     text-align: center;
     transition: all .5s;
 }
+
 .nav-menu li {
     display: none;
     line-height: 30px;
@@ -59,40 +57,24 @@ nav{
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 600;
-    text-decoration: none;
-    list-style: none;
-}
-.nav-menu li a.active, .nav-menu li a:hover {
-    color: rgb (248, 8, 8);
-    transition: .3s;
 }
 .nav-menu .contact{
     background-color: #3a6d7c;
     color: #f9f9f9;
 }
-/*------------------------------- fin Header-------------------------*/
-/*------------------------------- Carrusel---------------------------*/
-.d-block{
-    height: 400px;
+.nav-menu li a.active, .nav-menu li a:hover {
+    color: rgb (248, 8, 8);
+    transition: .3s;
 }
-/* ---------------------------fin de carrusel----------------------- */
-
-/* ------------------------productos destacados--------------------- */
-.prod-dest{
-    padding: 50px;
+.sb-nosotros{
+    height: 150px;
+    background-image: url(../html/img/img-nosotros/banner-nosotros.jpg);
+    background-repeat: no-repeat;
     text-align: center;
+    padding: 55px;
+    font-size: x-large;
 }
-.prod-title{
-    margin-bottom: 20px;
-}
 
-
-/* -------------------Fin productos destados ------------------------*/
-
-
-
-
-/* -------------------------------------Footer-----------------------*/
 .footer {
     padding: 50px;
     margin-top: 50px;
@@ -121,9 +103,12 @@ nav{
     padding: 29px;
     color: #f9f9f9;
 }
-/*------------------------------- Fin footer-------------------------------- */
-
-
+.nosotros-content{
+    text-align: center;
+}
+.nosotros-content img{
+    margin-top: 20px;
+}
 
 #check{
     display: none;
@@ -134,7 +119,6 @@ nav{
 #check:checked ~ .nav-menu li{
     display: block;
 }
-
 
 @media screen and (min-width: 728px){
     .logo{
@@ -166,6 +150,7 @@ nav{
         color: #000000;
     }
 }
+
 @media screen and (max-width: 728px){
     .d-block{
         height: 200px;
@@ -185,6 +170,3 @@ nav{
         gap: 20px;
     }
 }
-
-
-
