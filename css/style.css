@@ -70,6 +70,24 @@ nav{
     background-color: #3a6d7c;
     color: #f9f9f9;
 }
+.car-widget a{
+    display: flex;    
+    color: #009FE3;
+    text-decoration: none;
+    padding: 10px;
+    justify-content: baseline;
+    gap:3px
+}
+.car-widget a:hover{
+    background-color: #a8d6e9;
+    border-radius: 50%;
+}
+
+.car-widget p{
+    margin: 0;
+}
+
+
 /*------------------------------- fin Header-------------------------*/
 /*------------------------------- Carrusel---------------------------*/
 .d-block{
